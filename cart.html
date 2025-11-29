@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>السلة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="nbd.jpg" class="logo">
+</header>
+
+<div class="confirm-box">
+    <h2 id="item"></h2>
+    <h3 id="price"></h3>
+
+    <p>جاهز تكمّل الطلب؟</p>
+
+    <a class="btn" href="confirm.html?item=" id="confirmBtn">تأكيد الطلب</a>
+</div>
+
+<script>
+// نقرأ المنتج من الرابط
+const params = new URLSearchParams(window.location.search);
+const item = params.get("item");
+const price = params.get("price");
+
+document.getElementById("item").innerText = "المنتج: " + item;
+document.getElementById("price").innerText = "السعر: " + price + " د.ك";
+
+document.getElementById("confirmBtn").href = confirm.html?item=${item}&price=${price};
+</script>
+
+</body>
+</html>

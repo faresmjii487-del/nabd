@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background: linear-gradient(#003a97, #0074d4);
+    font-family: "Tajawal", sans-serif;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(6px);
+    font-weight: bold;
+}
+
+/* الصفحة الرئيسية */
+.home-box {
+    text-align: center;
+    padding: 40px;
+}
+
+/* أزرار */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #003a97;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+/* تسجيل الدخول */
+.login-box {
+    background: white;
+    color: #003a97;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 16px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    background: #003a97;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* المنتجات */
+.container {
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    color: #003a97;
+    border-radius: 14px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* الأنميشن */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* تأكيد الطلب */
+.confirm-box {
+    background: white;
+    color: #003a97;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 16px;
+}
+.logo {
+    background:"nbd.jpg" ;
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("nbd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+.cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #003a97;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.cart-btn:hover {
+    opacity: .8;
+}
+.product img {
+    width: 60%;
+    border-radius: 12px;
+}
+.product img {
+    width: 100px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
