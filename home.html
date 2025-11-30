@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الصفحة الرئيسية</title>
+   <link rel="stylesheet" href="style.css">
+<style>
+
+body {
+    font-family: sans-serif;
+    direction: rtl;
+    margin: 0;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+/* شريط البلوفرات */
+.scroller-container {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.scroller {
+    display: flex;
+    gap: 25px;
+    animation: scroll 12s linear infinite;
+}
+
+.scroller img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* حركة يمين → يسار */
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-120%); }
+}
+
+/* المنتجات */
+.product {
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #0056ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+</head>
+<header>
+    <h1>مرحباً في متجر نبض لمشروبات الطاقة ⚡💙</h1>
+    <>
+    <img src="nbd.jpg" class="logo">
+
+</header>
+<body>
+
+<h2>الصفحة الرئيسية</h2>
+
+<!-- شريط البلوفرات -->
+<div class="scroller-container">
+    <div class="scroller">
+        <img src="prod.jpg">
+        <img src="prod5.jpg">
+        <img src="prode2.jpg">
+        <img src="prode4.jpg">
+        <img src="prode7.jpg">
+         <img src="prode3.jpg">
+         <img src="prod6.jpg">
+       <img src="prode8.jpg"
+</div>
+</div>
+
+<!-- منتجات مثال -->
+<div class="product">منتج 1</div>
+<div class="product">منتج 2</div>
+<div class="product">منتج 3</div>
+
+<button class="back-btn" onclick="window.location.href='login.html'">
+رجوع لصفحة الدخول
+</button>
+
+</body>
+</html>
